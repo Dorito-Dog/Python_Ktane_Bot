@@ -7,6 +7,7 @@ from solvers import perplexingwires
 import solvers.knobs as knobs
 import solvers.mazes as mazes
 import solvers.wires as wires
+import solvers.morse as morse
 import solvers.button as button
 import solvers.memory as memory
 import solvers.keypads as keypads
@@ -53,6 +54,9 @@ def select_module():
                     case "defuse memory":
                         SpeakText("Memory")
                         memory.solve_memory(newBomb, "./grammars/memory.gram")
+                    case "defuse morse code":
+                        SpeakText("Morse code")
+                        morse.solve_morse(newBomb, "./grammars/morsecode.gram")
                     case "defuse complicated":
                         SpeakText("Complicated Wires")
                         complicated.solve_complicated(newBomb, "./grammars/complicatedwires.gram")
@@ -96,13 +100,16 @@ def select_module():
 
                     # Reset modules
                     case "reset memory":
-                        SpeakText("resetting memory")
                         newBomb.memory_round = 1
+                        SpeakText("Memory reset")
                     case "reset wire sequences":
                         newBomb.wire_sequences_black_count = 0
                         newBomb.wire_sequences_blue_count = 0
                         newBomb.wire_sequences_red_count = 0
-                        SpeakText("Wire sequences reset.")
+                        SpeakText("Wire sequences reset")
+                    case "reset morse code":
+                        newBomb.morse_num = 1
+                        SpeakText("Morse code reset")
                     case "reset password":
                         newBomb.password_num = 1
                     case "reset screams":
@@ -129,7 +136,7 @@ def select_module():
                     case _:
                         SpeakText("unknown command: {}".format(MyText))
                         print(MyText)
-                        
+
         except sr.RequestError as e:
             print("Could not request results; {0}".format(e))
 

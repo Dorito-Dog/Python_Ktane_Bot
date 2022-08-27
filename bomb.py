@@ -18,7 +18,8 @@ class Bomb:
         self.wire_sequences_moves = []
         self.password_num = 1
         self.password_options = []
-        self.morse_characters = []
+        self.morse_num = 1
+        self.morse_options = []
 
         # Modded requirements
         self.indicator_count = None
