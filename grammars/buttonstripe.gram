@@ -1,0 +1,4 @@
+#JSGF V1.0;
+
+grammar buttonstripe;
+public <buttonstripe> = ( red | blue | yellow | white | black );

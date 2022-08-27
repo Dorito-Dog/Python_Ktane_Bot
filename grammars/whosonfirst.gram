@@ -1,0 +1,5 @@
+#JSGF V1.0;
+
+grammar whosonfirst;
+public <whosonfirst> = display <words> then <words> then <words> then <words> then <words> then <words> then <words> over;
+<words> = (yes | first | display | okay | says | nothing | empty | blank | no | l e d | lead a country | read a book | red | reed | leed | hold on | you | you are | your possessive | you're contraction | you are letters | there | they're contraction | their possessive | they are | see | letter see | see word | ready | what statement | you three h | left | right | middle | wait | press | letter you | uh huh positive | uh uh negative | what question | done | next | hold | sure | like);

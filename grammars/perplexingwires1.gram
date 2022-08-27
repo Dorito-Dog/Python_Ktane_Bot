@@ -1,0 +1,8 @@
+#JSGF V1.0;
+
+grammar perplexingwires1;
+public <perplexingwires1> = ( (light <led> <led> <led> ) | (stars <stars> <stars> <stars> <stars> ) | (wires <wires> <number> <wires> <number> <wires> <number> <wires> <number> <wires> <number> <wires> <number>) ) done;
+<led> = ( on | off );
+<stars> = ( white | black );
+<wires> = ( red | orange | yellow | green | blue | purple | black | white );
+<number> = ( one | two | three | four );

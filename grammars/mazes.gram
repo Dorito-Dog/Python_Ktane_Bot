@@ -1,0 +1,5 @@
+#JSGF V1.0;
+
+grammar mazes;
+public <mazes> = ( row <number> column <number> ) done;
+<number> = ( one | two | three | four | five | six );

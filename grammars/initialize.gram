@@ -1,0 +1,7 @@
+#JSGF V1.0;
+
+grammar initialize;
+public <initialize> = ( uh | batteries <number> | car <boolean> | freak <boolean> | vowel <boolean> | digit <parity> | parallel port <boolean> | skip );
+<number> = ( one | two | three | four | five | six | seven | eight | nine | zero);
+<boolean> = ( yes | no );
+<parity> = ( odd | even );

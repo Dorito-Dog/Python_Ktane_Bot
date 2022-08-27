@@ -1,0 +1,5 @@
+#JSGF V1.0;
+
+grammar keypads;
+public <keypads> = ((<key>) next*)+ done;
+<key> = ( q | a t | lambda | z | spider | letter h | backwards c dot | c dot | e dots | curl | white star | question mark | copyright | but | j | half three | russian b | paragraph | b t | smiley | sigh | alien snake | black star | puzzle piece | a e | nose ring | omega );

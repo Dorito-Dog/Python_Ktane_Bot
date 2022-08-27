@@ -1,0 +1,4 @@
+#JSGF V1.0;
+
+grammar simonscreams;
+public <simonscreams> = ( red | orange | yellow | green | blue | purple )+ done;

@@ -1,0 +1,7 @@
+#JSGF V1.0;
+
+grammar module;
+public <command> = ( uh | bomb check | defuse <module> | (add | remove) a strike | reset <resettable> | undo last <undoable> );
+<module> = ( wires | button | keypads | simon | words | memory | morse code | complicated | sequence | maze | password | knobs );
+<resettable> = ( memory | wire sequences | password | morse code );
+<undoable> = ( wire sequence );

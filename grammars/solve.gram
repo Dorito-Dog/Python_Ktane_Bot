@@ -1,0 +1,9 @@
+#JSGF V1.0;
+
+grammar solve;
+public <solve> = ( initialize bomb | defuse <module>| (add | remove) a strike | bomb <success> | bomb <failure> | reset <resettable> | undo last <undoable> | please stop );
+<module> = ( wires | button | keypads | simon says | who's on first | memory | morse code | complicated | sequence | maze | password | knobs | perplexing | screams );
+<resettable> = ( memory | wire sequences | password | morse code | strikes | screams );
+<undoable> = ( sequence | memory );
+<success> = ( the bomb is defused | we did it | we're done | we won );
+<failure> = ((( the bomb | it ) ( detonated | blew up )) | we lost );

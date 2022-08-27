@@ -1,0 +1,6 @@
+#JSGF V1.0;
+
+grammar perplexingwiresarrows;
+public <perplexingwiresarrows> = ( arrows <arrows> <directions> <arrows> <directions> <arrows> <directions> <arrows> <directions> <arrows> <directions> <arrows> <directions> ) done;
+<arrows> = ( red | yellow | green | blue | purple );
+<directions> = ( up | down | left | right );
