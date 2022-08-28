@@ -30,22 +30,22 @@ morseDict = {
 }
 
 frequencyDict = {
-    "shell":505,
-    "halls":515,
-    "slick":522,
-    "trick":532,
-    "boxes":535,
-    "leaks":542,
-    "strobe":545,
-    "bistro":552,
-    "flick":555,
-    "bombs":565,
-    "break":572,
-    "brick":575,
-    "steak":582,
-    "sting":592,    
-    "vector":595,
-    "beats":600
+    "shell":"5 0 5",
+    "halls":"5 1 5",
+    "slick":"5 2 2",
+    "trick":"5 3 2",
+    "boxes":"5 3 5",
+    "leaks":"5 4 2",
+    "strobe":"5 4 5",
+    "bistro":"5 5 2",
+    "flick":"5 5 5",
+    "bombs":"5 6 5",
+    "break":"5 7 2",
+    "brick":"5 7 5",
+    "steak":"5 8 2",
+    "sting":"5 9 2",    
+    "vector":"5 9 5",
+    "beats":"6 0 0"
 }
 
 def solve_morse(bomb, gram):
