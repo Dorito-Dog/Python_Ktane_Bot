@@ -117,7 +117,7 @@ def letter_to_word(letters, solution):
 
 def sliding_window(elements, comparator, window_size):
     for i in range(len(elements) - window_size + 1):
-        if ''.join(elements[i:i+window_size]) in ''.join(comparator+comparator):
+        if ''.join(elements[i:i+window_size]) in ''.join(comparator+comparator): # comparator+comparator is so that in case colors loop around the end points of the list, the adjacencies are still present.
             return True
     else: 
         return False
